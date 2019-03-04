@@ -1,0 +1,15 @@
+[
+ {
+   "band" : "Soundgarden",
+   "start" : "1993-05-25T02:00:00Z",
+   "finish" : "1993-05-25T02:50:00Z",
+   "priority" : 5
+ },
+ {
+   "band" : "Pearl Jam",
+   "start" : "1993-05-25T02:15:00Z",
+   "finish" : "1993-05-25T02:35:00Z",
+   "priority" : 9
+ }
+]
+

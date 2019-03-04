@@ -1,6 +1,9 @@
 #!/usr/bin/env bash
 
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
+RED='\033[0;31m'
+GREEN='\033[1;32m'
+NONE='\033[0m'
 
 function verify {
     FILE_PATH="$DIR/$1"
@@ -25,14 +28,14 @@ function verify {
 
         DIFF=`diff $FILE_PATH.optimal.norm.json $FILE_PATH.optimal.norm.json.expected`
         if [ -z "$DIFF" ]; then
-            echo "OK"
+            echo -e "${GREEN}  OK  ${NONE}"
         else
-            echo "FAILED:"
+            echo -e "${RED}  FAILED:  ${NONE}"
             echo "$DIFF"
         fi
         `rm $FILE_PATH*.norm.*`
     else
-        echo "FAILED: No output file was found at $SOLUTION_PATH"
+        echo -e "${RED}FAILED: No output file was found at $SOLUTION_PATH   ${NONE}"
     fi
 }
 
@@ -49,8 +52,10 @@ fi
 
 EXE=$1
 
+rm -f *.optimal.json
 echo "Testing executable '$EXE'"
 
+verify "example"
 verify "overlapping"
 verify "time-priority"
 

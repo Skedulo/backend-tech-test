@@ -2,37 +2,31 @@
   {
     "band" : "Red Hot Chili Peppers",
     "start" : "2018-05-25T00:00:00Z",
-    "finish" : "2018-05-25T00:05:00Z",
-    "priority" : 9
+    "finish" : "2018-05-25T00:05:00Z"
   },
   {
     "band" : "Pearl Jam",
     "start" : "2018-05-25T00:05:00Z",
-    "finish" : "2018-05-25T00:25:00Z",
-    "priority" : 10
+    "finish" : "2018-05-25T00:25:00Z"
   },
   {
     "band" : "Red Hot Chili Peppers",
     "start" : "2018-05-25T00:25:00Z",
-    "finish" : "2018-05-25T00:35:00Z",
-    "priority" : 9
+    "finish" : "2018-05-25T00:35:00Z"
   },
   {
     "band" : "Soundgarden",
     "start" : "2018-05-25T00:35:00Z",
-    "finish" : "2018-05-25T00:45:00Z",
-    "priority" : 5
+    "finish" : "2018-05-25T00:45:00Z"
   },
   {
     "band" : "Nirvana",
     "start" : "2018-05-25T00:45:00Z",
-    "finish" : "2018-05-25T01:00:00Z",
-    "priority" : 1
+    "finish" : "2018-05-25T01:00:00Z"
   },
   {
     "band" : "Rage Against The Machine",
     "start" : "2018-05-25T01:10:00Z",
-    "finish" : "2018-05-25T01:30:00Z",
-    "priority" : 4
+    "finish" : "2018-05-25T01:30:00Z"
   }
 ]
