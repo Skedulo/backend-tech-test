@@ -1,0 +1,22 @@
+[
+  {
+    "band": "Red Hot Chili Peppers",
+    "start": "2018-05-25T00:00:00Z",
+    "finish": "2018-05-25T00:01:15Z"
+  },
+  {
+    "band": "Pearl Jam",
+    "start": "2018-05-25T00:01:15Z",
+    "finish": "2018-05-25T00:28:30Z"
+  },
+  {
+    "band": "Red Hot Chili Peppers",
+    "start": "2018-05-25T00:28:30Z",
+    "finish": "2018-05-25T00:35:00Z"
+  },
+  {
+    "band": "Soundgarden",
+    "start": "2018-05-25T00:35:00Z",
+    "finish": "2018-05-25T00:45:00Z"
+  }
+]

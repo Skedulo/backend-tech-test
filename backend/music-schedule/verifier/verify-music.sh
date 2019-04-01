@@ -58,6 +58,8 @@ echo "Testing executable '$EXE'"
 verify "example"
 verify "overlapping"
 verify "time-priority"
+verify "minutes-resolution"
+verify "seconds-resolution"
 
 echo ""
 echo "Finished verifying"
