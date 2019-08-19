@@ -60,6 +60,7 @@ verify "overlapping"
 verify "time-priority"
 verify "minutes-resolution"
 verify "seconds-resolution"
+verify "timezone"
 
 echo ""
 echo "Finished verifying"
