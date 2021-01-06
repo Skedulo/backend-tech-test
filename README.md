@@ -16,7 +16,9 @@ priority: Integer
 ## Your Challenge 
 
 Write a program for Sally that takes a list of Performance objects as input and produces Sally’s optimal schedule. 
-1. Keep in mind Sally wants to see the best performance at any given time. This may mean cutting one event short to see a higher priority performance, then returning to the original later. 
+
+An optimal schedule meets the following criteria: 
+1. Sally wants to see the best performance at any given time. This may mean cutting one event short to see a higher priority performance, then returning to the original later. 
 2. You can assume Sally has a teleportation device and can travel between stages instantaneously! 
 3. If two performances starting at the same time have the same priority, Sally is happy to go to either one. 
 4. There may also be gaps where no performances are on. 
@@ -37,10 +39,6 @@ band: String
 start: DateTime 
 finish: DateTime 
 ```
-
-Please provide a link to a private github repository containing your solution and instructions how to launch.
-
-This repository contains some test examples in [] that we will use to validate your solution. 
 
 Some examples include:
 
@@ -82,6 +80,22 @@ Output file (overlapping.optimal.json):
   } 
 ] 
 ```
+
+## How to verify your solution
+
+This repository has a standard script that you can use to evaluate you solution. It is located in [music-schedule/verifier/README.txt](music-schedule/verifier/README.txt)
+
+We typically assume the following when we verify your solution:
+1. There is a build.sh or build.bat to builds the program
+2. and a run.sh or run.bat that runs the program
+
+## How to submit
+
+Once you've completed the test can you please post your solution to a private Github repository, let your hiring manager know and they can provide the accounts of some available reviewers.
+
+Thank you for applying and good luck on this project!
+
+## End note
 
 If you have any queries about the programming challenge, please get in touch with your hiring manager and we will be happy to clarify.
 
