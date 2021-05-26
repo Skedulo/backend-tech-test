@@ -1,5 +1,9 @@
 # Programming Challenge 
 
+Hi! Welcome to the Skedulo backend tech project. Here you will be creating an optimal schedule for Sally Salamander at a music festival, ensuring that she can see her favourite shows!
+
+Feel free to complete the test in the language you most feel comfortable with, at Skedulo we primarily work with Kotlin, Typescript, and Scala but want to make sure that you can submit your most confident work without burdening yourself learning new tools and technologies.
+
 ## The Sound of Music 
 Sally Salamander is going to the ‘Big Weekend Out’ music festival, and has a list of acts she wants to see. 
 Unfortunately, many of these performances overlap in time. In order to determine where to be at what time, Sally has taken the list of events published on the Big Weekend website and added a priority to each from 1 to 10 (from least to most important). 
@@ -89,9 +93,17 @@ We typically assume the following when we verify your solution:
 1. There is a build.sh or build.bat to builds the program
 2. and a run.sh or run.bat that runs the program
 
+## What we're looking for
+
+When we review your submission we're looking for a few things:
+- [ ] how you model the domain that you're working with,
+- [ ] coding approach and proficiency with your language of choice,
+- [ ] what testing strategy you apply to ensure that any solution has future maintainability,
+- [ ] a readme that discusses your approach, any concessions you made, any self imposed constraints, anything that you think would be valuable for the reviewer to know.
+
 ## How to submit
 
-Once you've completed the test can you please post your solution to a private Github repository, let your hiring manager know and they can provide the accounts of some available reviewers.
+Once you've determined how Sally can have her best concert experience can you please post your solution to a private Github repository, let your hiring manager know and they can provide the accounts of some available reviewers.
 
 Thank you for applying and good luck on this project!
 
