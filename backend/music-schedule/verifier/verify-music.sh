@@ -11,13 +11,7 @@ function verify {
     echo ""
     echo "Testing $FILE_PATH.json..."
 
-    if [ -z "$EXE_USING" ];
-    then
-      bash $EXE ${FILE_PATH}.json
-    else
-      echo "Running: $EXE_USING $EXE ${FILE_PATH}.json"
-      $EXE_USING $EXE ${FILE_PATH}.json
-    fi
+    $EXE_USING $EXE ${FILE_PATH}.json
 
     if [ $? -ne 0 ]; then
       echo ""
@@ -61,12 +55,13 @@ EXE="$1"
 EXE_USING="$2"
 
 rm -f *.optimal.json
-echo "Testing executable '$EXE'"
 
-if [ ! -z "$EXE_USING" ];
+if [ -z "$EXE_USING" ];
 then
-  echo "  with '$EXE_USING'"
+  EXE_USING="bash"
 fi
+
+echo "Testing executable '$EXE' using '$EXE_USING'"
 
 verify "example"
 verify "overlapping"
