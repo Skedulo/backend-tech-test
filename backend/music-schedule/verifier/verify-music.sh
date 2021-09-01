@@ -9,9 +9,15 @@ function verify {
     FILE_PATH="$DIR/$1"
 
     echo ""
-    echo -n "Testing $FILE_PATH.json..."
+    echo "Testing $FILE_PATH.json..."
 
-    bash $EXE $FILE_PATH.json
+    if [ -z "$EXE_USING" ];
+    then
+      bash $EXE ${FILE_PATH}.json
+    else
+      echo "Running: $EXE_USING $EXE ${FILE_PATH}.json"
+      $EXE_USING $EXE ${FILE_PATH}.json
+    fi
 
     if [ $? -ne 0 ]; then
       echo ""
@@ -43,17 +49,24 @@ function normaliseJson {
     jq -c . $1 | jq .
 }
 
-if [ $# -ne 1 ]; then
-    echo "Usage: $0 <path>"
+if [ $# -ne 1 ] && [ $# -ne 2 ]; then
+    echo "Usage: $0 <path> <run_using>"
     echo "  path: Full path to the executable to test"
     echo "        The executable should take two arguments: the input and output file names"
+    echo "  run_using: An optional command used to execute the given path (e.g. node)"
     exit 1
 fi
 
-EXE=$1
+EXE="$1"
+EXE_USING="$2"
 
 rm -f *.optimal.json
 echo "Testing executable '$EXE'"
+
+if [ ! -z "$EXE_USING" ];
+then
+  echo "  with '$EXE_USING'"
+fi
 
 verify "example"
 verify "overlapping"
