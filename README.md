@@ -87,11 +87,13 @@ Output file (overlapping.optimal.json):
 
 ## How to verify your solution
 
-This repository has a standard script that you can use to evaluate you solution. It is located in [music-schedule/verifier/README.txt](music-schedule/verifier/README.txt)
+This repository has a standard script that you can use to evaluate you solution. It is located in [music-schedule/verifier](music-schedule/verifier)
 
 We typically assume the following when we verify your solution:
 1. There is a build.sh or build.bat to builds the program
 2. and a run.sh or run.bat that runs the program
+
+Note that the `jq` program is a dependency of the verifier. Windows users may need to install it.
 
 ## What we're looking for
 
