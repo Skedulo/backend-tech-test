@@ -8,3 +8,8 @@ Usage:
     2. Execute: <path_to_verifier> <run_command>
         - For example, ../verifier/verify-music.sh run.sh
 
+If your app is not an executable file itself (e.g. `.js`) then you can pass a second argument to tell `verify-music.sh` how to execute it.
+E.g.
+```
+../verifier/verify-music.sh my-app.js node
+```
