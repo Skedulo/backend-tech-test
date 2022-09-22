@@ -1,3 +1,4 @@
 #!/bin/bash
 
-./gradlew bootRun --args="$1"
+# Run kotlin skeleton
+(cd skeletons/kotlin/; ./gradlew bootRun --args="$1")
